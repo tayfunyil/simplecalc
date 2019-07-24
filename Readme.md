@@ -10,6 +10,11 @@ If you like my project, "Star" in the corresponding project right corner, please
 BTC Address: 14pmyZZrFfCCEK49FC7jKWj1WGzhUP4rsQ
 
 
+<div align="center">
+  <img src="simplecalc.png" />
+</div>
+
+
 ## Installation
 
 Install dependencies.
@@ -19,7 +24,7 @@ git clone https://github.com/localhostport80/simplecalc && cd simplecalc
 npm install
 ```
 
-## Usage
+## Building
 
 ### DevApp
 
@@ -29,10 +34,19 @@ Run it inside Ionic DevApp.
 ionic serve --devapp
 ```
 
-### Build
+### Release
 
 Build it for the specific platform.
 
 ```bash
 ionic cordova build --release <platform>
 ```
+
+## Usage
+
+SimpleCalc supports the following gestures:
+
+* Swipe Down: Get Result.
+* Swipe Up: Clear Input.
+* Swipe Left: Delete Last Character.
+* Swipe Right: Redo Last Character.
