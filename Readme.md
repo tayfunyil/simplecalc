@@ -11,7 +11,7 @@ BTC Address: 14pmyZZrFfCCEK49FC7jKWj1WGzhUP4rsQ
 
 
 <div align="center">
-  <img width="50%" src="simplecalc.png" />
+  <img width="35%" src="simplecalc.png" />
 </div>
 
 
