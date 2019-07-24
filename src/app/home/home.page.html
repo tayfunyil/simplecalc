@@ -1,14 +1,90 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+    <div class="mainDiv" swipeAll (swipeleft)="swipeLeftEvent()" (swiperight)="swipeRightEvent()"
+         (swipedown)="swipeDownEvent()" (swipeup)="swipeUpEvent()">
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <div class="cursor">
+                        <ion-input class="ioninput" value="Readonly" [(ngModel)]="inputField" readonly=""
+                                   (click)="onInputClick()"></ion-input>
+                        <i></i>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <ion-button expand="block" (click)="onDefaultButtonClick(7)">7</ion-button>
+                </ion-col>
+                <ion-col>
+                    <ion-button expand="block" (click)="onDefaultButtonClick(8)">8</ion-button>
+                </ion-col>
+                <ion-col>
+                    <ion-button expand="block" (click)="onDefaultButtonClick(9)">9</ion-button>
+                </ion-col>
+                <ion-col>
+                    <ion-button expand="block" (click)="onDefaultButtonClick('*')">×</ion-button>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col>
+                    <ion-button expand="block" (click)="onDefaultButtonClick(4)">4</ion-button>
+                </ion-col>
+                <ion-col>
+                    <ion-button expand="block" (click)="onDefaultButtonClick(5)">5</ion-button>
+                </ion-col>
+                <ion-col>
+                    <ion-button expand="block" (click)="onDefaultButtonClick(6)">6</ion-button>
+                </ion-col>
+                <ion-col>
+                    <ion-button expand="block" (click)="onDefaultButtonClick('-')">-</ion-button>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col>
+                    <ion-button expand="block" (click)="onDefaultButtonClick(1)">1</ion-button>
+                </ion-col>
+                <ion-col>
+                    <ion-button expand="block" (click)="onDefaultButtonClick(2)">2</ion-button>
+                </ion-col>
+                <ion-col>
+                    <ion-button expand="block" (click)="onDefaultButtonClick(3)">3</ion-button>
+                </ion-col>
+                <ion-col>
+                    <ion-button expand="block" (click)="onDefaultButtonClick('+')">+</ion-button>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col>
+                    <ion-button expand="block" (click)="onClearButtonClick()" color="tertiary">C</ion-button>
+                </ion-col>
+                <ion-col>
+                    <ion-button expand="block" (click)="onDefaultButtonClick('0')">0</ion-button>
+                </ion-col>
+                <ion-col>
+                    <ion-button expand="block" (click)="onDefaultButtonClick('.')">,</ion-button>
+                </ion-col>
+                <ion-col>
+                    <ion-button expand="block" (click)="onResultButtonClick()" color="secondary">=</ion-button>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col>
+                    <ion-button expand="block" (click)="onBracketButtonClick()" color="tertiary">⦗⦘</ion-button>
+                </ion-col>
+                <ion-col>
+                    <ion-button expand="block" (click)="swipeLeftEvent()" color="tertiary">←</ion-button>
+                </ion-col>
+                <ion-col>
+                    <ion-button expand="block" (click)="swipeRightEvent()" color="tertiary">↻</ion-button>
+                </ion-col>
+                <ion-col>
+
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
 </ion-content>
